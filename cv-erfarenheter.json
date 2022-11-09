@@ -1,0 +1,56 @@
+{
+  "edjucation": [
+    {
+      "school": "Mediagymnasiet",
+      "subject": "Teknikprogrammet",
+      "inriktning": "information- och medieinriktning",
+      "date": "2013-2016"
+    },
+    {
+      "school": "Stockhoms Universitet",
+      "subject": "Japanska 1",
+      "date": "2017"
+    },
+    {
+      "school": "Luleå Tekniska Universitet",
+      "subject": "Systemvetenskap",
+      "date": "2018-2020"
+    },
+    {
+      "YH": "YH-Utbildning ",
+      "school": "Chas academy",
+      "subject": "Fullstack .NET utvecklare",
+      "date": "Present"
+    }
+  ],
+  "experiences": [
+    {
+      "Employer": "Biltema",
+      "occupation": "Cykelmekaniker - Butiksmedarbetare",
+      "date": "Present"
+    },
+    {
+      "Employer": "Antistilla",
+      "split": "AB",
+      "occupation": "Vaktmästare och lärarhjälp",
+      "date": "2014"
+    },
+    {
+      "Employer": "Cykelmagneten",
+      "occupation": "Cykelmekaniker",
+      "date": "2011"
+    },
+    {
+      "Employer": "Max",
+      "split": "Hamburgerkedja",
+      "occupation": "Restaurangmedarbetare",
+      "date": "2019"
+    },
+    {
+      "Employer": "All",
+      "split": "Perform AB",
+      "occupation": "Värd vid mässor och event",
+      "date": "2011-"
+    }
+  ]
+}
