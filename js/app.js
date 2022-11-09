@@ -80,10 +80,10 @@ function loadData() {
 }
 //---------------------------------------------------------------------------------------------
 
-// Nav highlight
+// Nav highlight PC view
 const sections = document.querySelectorAll("section[id]");
 
-window.addEventListener("scroll", navHighlighter);
+window.addEventListener("scroll", navHighlighter, navHighlighterMobile);
 
 function navHighlighter() {
   let scrollY = window.pageYOffset + 100;
@@ -104,10 +104,43 @@ function navHighlighter() {
     }
   });
 }
-console.log(sections);
+// Nav highlight mobile view
+function navHighlighterMobile() {
+  let scrollY = window.pageYOffset + 100;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 100;
+    sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".mob-top-nav a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".mob-top-nav a[href*=" + sectionId + "]")
+        .classList.remove("active");
+    }
+  });
+}
+
+//--------------------------------------------------------------------------------------------
+
+//portfolio cards
+
+document.getElementById("cards").onmousemove = (e) => {
+  for (const card of document.getElementsByClassName("card")) {
+    const rect = card.getBoundingClientRect(),
+      x = e.clientX - rect.left,
+      y = e.clientY - rect.top;
+
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+  }
+};
 
 //---------------------------------------------------------------------------------------------
-
 /* ToDoList:
 
     1. Make portfolio in to different interactive categories, "free time projects" "School projects"
