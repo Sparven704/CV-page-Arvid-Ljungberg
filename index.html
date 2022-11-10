@@ -130,138 +130,9 @@
                         </div>
                       </div>
                       <!--button-->
-                      <div class="btn-aboutme">
-                        <label for="chkBox" class="label-chkBox"
-                          >Contact Me</label
-                        >
-                      </div>
-                      <input type="checkbox" name="" id="chkBox" />
-                      <div class="mainContent">
-                        <div class="box">
-                          <!-- box 1 start-->
-                          <div class="boxes bx1">
-                            <div class="contact-info">
-                              <div class="name">Arvid Ljungberg</div>
-                              <div class="subname">Studying developer</div>
-                              <div class="info-list">
-                                <ul>
-                                  <li>
-                                    <strong>
-                                      <span>Age: </span>
-                                    </strong>
-                                    <span>25</span>
-                                  </li>
-                                  <li>
-                                    <strong>
-                                      <span>Residence: </span>
-                                    </strong>
-                                    <span>Sweden</span>
-                                  </li>
-                                  <li>
-                                    <strong>
-                                      <span>Freelance: </span>
-                                    </strong>
-                                    <span>Available part time</span>
-                                  </li>
-                                  <li>
-                                    <strong>
-                                      <span>Address: </span>
-                                    </strong>
-                                    <span>Stockholm</span>
-                                  </li>
-                                  <li>
-                                    <strong>
-                                      <span>Phone: </span>
-                                    </strong>
-                                    <span>+46 70 795 50 01</span>
-                                  </li>
-                                  <li>
-                                    <strong>
-                                      <span>E-mail: </span>
-                                    </strong>
-                                    <span>Arvid.lju@gmail.com</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- box 2 start-->
-                          <div class="boxes bx2">
-                            <div class="fcf-body">
-                              <div id="fcf-form">
-                                <h3 class="fcf-h3">Contact me</h3>
-
-                                <form
-                                  id="fcf-form-id"
-                                  class="fcf-form-class"
-                                  method="post"
-                                  action="contact-form-process.php"
-                                >
-                                  <div class="fcf-form-group">
-                                    <label for="Name" class="fcf-label"
-                                      >Your name</label
-                                    >
-                                    <div class="fcf-input-group">
-                                      <input
-                                        type="text"
-                                        id="Name"
-                                        name="Name"
-                                        class="fcf-form-control"
-                                        required
-                                      />
-                                    </div>
-                                  </div>
-
-                                  <div class="fcf-form-group">
-                                    <label for="Email" class="fcf-label"
-                                      >Your email address</label
-                                    >
-                                    <div class="fcf-input-group">
-                                      <input
-                                        type="email"
-                                        id="Email"
-                                        name="Email"
-                                        class="fcf-form-control"
-                                        required
-                                      />
-                                    </div>
-                                  </div>
-
-                                  <div class="fcf-form-group">
-                                    <label for="Message" class="fcf-label"
-                                      >Your message</label
-                                    >
-                                    <div class="fcf-input-group">
-                                      <textarea
-                                        id="Message"
-                                        name="Message"
-                                        class="fcf-form-control"
-                                        rows="6"
-                                        maxlength="3000"
-                                        required
-                                      ></textarea>
-                                    </div>
-                                  </div>
-
-                                  <div class="fcf-form-group">
-                                    <button
-                                      type="submit"
-                                      id="fcf-button"
-                                      class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-                                    >
-                                      Send Message
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                            <div class="close-box">
-                              <label for="chkBox" class="box-close">X</label>
-                            </div>
-                          </div>
-                          <!-- box 2 end-->
-                        </div>
-                      </div>
+                      <a class="btn-aboutme" href="#section-contacts">
+                        Contact Me
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -567,9 +438,6 @@
               </div>
             </div>
           </section>
-          <a name="anchor-language-skills">
-            <h1 style="padding-top: 40px; margin-top: -40px"></h1>
-          </a>
           <!-- section language -->
           <section class="sec-section" id="section-languages">
             <div class="section skills">
@@ -830,9 +698,6 @@
               </div>
             </div>
           </section>
-          <a name="anchor-portfolio" id="anchor-portfolio-id">
-            <h1 style="padding-top: 40px; margin-top: -40px"></h1>
-          </a>
           <!-- section portfolio -->
           <section class="sec-section" id="section-portfolio">
             <div class="section">
@@ -848,20 +713,69 @@
                 </div>
                 <!--portfolio items-->
                 <div id="cards">
-                  <div class="card">
+                  <!-- WORK PROJECTS CARD -->
+                  <a class="card button" href="#openModal-work">
                     <div class="card-border"></div>
                     <div class="card-content">
                       <div class="titles">
                         <h2 class="title">
-                          <span>Work</span>
+                          <span>WORK</span>
                         </h2>
                         <div class="subtitle">
                           <span>Projects</span>
                         </div>
                       </div>
                     </div>
+                  </a>
+                  <div id="openModal-work" class="modalDialog">
+                    <div class="modal">
+                      <a href="#close" title="Close" class="close">X</a>
+                      <div class="slider-container-work">
+                        <div class="left-slides-work">
+                          <div style="background-color: #353b48">
+                            <h3>WORK FILLER 1</h3>
+                            <p>WORK FILLER WORK FILLER WORK FILLER</p>
+                          </div>
+                          <div style="background-color: #4bcffa">
+                            <h3>WORK FILLER 2</h3>
+                            <p>WORK FILLER WORK FILLER WORK FILLER</p>
+                          </div>
+                          <div style="background-color: #218c74">
+                            <h3>WORK FILLER 3</h3>
+                            <p>WORK FILLER WORK FILLER WORK FILLER</p>
+                          </div>
+                          <div style="background-color: #ff7f50">
+                            <h3>WORK FILLER 4</h3>
+                            <p>WORK FILLER WORK FILLER WORK FILLER</p>
+                          </div>
+                        </div>
+                        <div class="right-slides-work">
+                          <div
+                            style="background-image: url(img/sloths/sloth1.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth2.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth3.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth4.jpg)"
+                          ></div>
+                        </div>
+                        <div class="slide-buttons-work">
+                          <button class="left-btn-work">
+                            <i class="fa-solid fa-arrow-down"></i>
+                          </button>
+                          <button class="right-btn-work">
+                            <i class="fa-solid fa-arrow-up"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card">
+                  <!-- SCHOOL PROJECTS CARD -->
+                  <a class="card button" href="#openModal-school">
                     <div class="card-border"></div>
                     <div class="card-content">
                       <div class="titles">
@@ -873,29 +787,187 @@
                         </div>
                       </div>
                     </div>
+                  </a>
+                  <div id="openModal-school" class="modalDialog">
+                    <div class="modal">
+                      <a href="#close" title="Close" class="close">X</a>
+                      <div class="slider-container">
+                        <div class="left-slides">
+                          <div style="background-color: #353b48">
+                            <h3>Minesweeper</h3>
+                            <p>This is a minesweeper game that I made</p>
+                          </div>
+                          <div style="background-color: #4bcffa">
+                            <h3>Weather app</h3>
+                            <p>This is a small weather app that I made</p>
+                          </div>
+                          <div style="background-color: #218c74">
+                            <h3>Filler1</h3>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit.
+                            </p>
+                          </div>
+                          <div style="background-color: #ff7f50">
+                            <h3>Filler2</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                        </div>
+                        <div class="right-slides">
+                          <div
+                            style="background-image: url(img/sloths/sloth1.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth2.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth3.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth4.jpg)"
+                          ></div>
+                        </div>
+                        <div class="slide-buttons">
+                          <button class="left-btn">
+                            <i class="fa-solid fa-arrow-down"></i>
+                          </button>
+                          <button class="right-btn">
+                            <i class="fa-solid fa-arrow-up"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card">
+                  <!-- HOBBY PROJECTS CARD -->
+                  <a class="card button" href="#openModal-hobby">
                     <div class="card-border"></div>
                     <div class="card-content">
                       <div class="titles">
                         <h2 class="title">
-                          <span>Hobby</span>
+                          <span>HOBBY</span>
                         </h2>
                         <div class="subtitle">
                           <span>Projects</span>
                         </div>
                       </div>
                     </div>
+                  </a>
+                  <div id="openModal-hobby" class="modalDialog">
+                    <div class="modal">
+                      <a href="#close" title="Close" class="close">X</a>
+                      <div class="slider-container-hobby">
+                        <div class="left-slides-hobby">
+                          <div style="background-color: #353b48">
+                            <h3>HOBBY FILLER 1</h3>
+                            <p>HOBBY FILLER HOBBY FILLER HOBBY FILLER</p>
+                          </div>
+                          <div style="background-color: #4bcffa">
+                            <h3>HOBBY FILLER 2</h3>
+                            <p>HOBBY FILLER HOBBY FILLER HOBBY FILLER</p>
+                          </div>
+                          <div style="background-color: #218c74">
+                            <h3>HOBBY FILLER 3</h3>
+                            <p>HOBBY FILLER HOBBY FILLER HOBBY FILLER</p>
+                          </div>
+                          <div style="background-color: #ff7f50">
+                            <h3>HOBBY FILLER 4</h3>
+                            <p>HOBBY FILLER HOBBY FILLER HOBBY FILLER</p>
+                          </div>
+                        </div>
+                        <div class="right-slides-hobby">
+                          <div
+                            style="background-image: url(img/sloths/sloth1.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth2.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth3.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth4.jpg)"
+                          ></div>
+                        </div>
+                        <div class="slide-buttons-hobby">
+                          <button class="left-btn-hobby">
+                            <i class="fa-solid fa-arrow-down"></i>
+                          </button>
+                          <button class="right-btn-hobby">
+                            <i class="fa-solid fa-arrow-up"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card">
+                  <!-- UNFINISHED PROJECTS CARD -->
+                  <a class="card button" href="#openModal-unfinished">
                     <div class="card-border"></div>
                     <div class="card-content">
                       <div class="titles">
                         <h2 class="title">
-                          <span>Unfinished</span>
+                          <span>UNFINISHED</span>
                         </h2>
                         <div class="subtitle">
                           <span>Projects</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div id="openModal-unfinished" class="modalDialog">
+                    <div class="modal">
+                      <a href="#close" title="Close" class="close">X</a>
+                      <div class="slider-container-unfinished">
+                        <div class="left-slides-unfinished">
+                          <div style="background-color: #353b48">
+                            <h3>UNFINISHED FILLER 1</h3>
+                            <p>
+                              UNFINISHED FILLER UNFINISHED FILLER UNFINISHED
+                              FILLER
+                            </p>
+                          </div>
+                          <div style="background-color: #4bcffa">
+                            <h3>UNFINISHED FILLER 2</h3>
+                            <p>
+                              UNFINISHED FILLER UNFINISHED FILLER UNFINISHED
+                              FILLER
+                            </p>
+                          </div>
+                          <div style="background-color: #218c74">
+                            <h3>UNFINISHED FILLER 3</h3>
+                            <p>
+                              UNFINISHED FILLER UNFINISHED FILLER UNFINISHED
+                              FILLER
+                            </p>
+                          </div>
+                          <div style="background-color: #ff7f50">
+                            <h3>UNFINISHED FILLER 4</h3>
+                            <p>
+                              UNFINISHED FILLER UNFINISHED FILLER UNFINISHED
+                              FILLER
+                            </p>
+                          </div>
+                        </div>
+                        <div class="right-slides-unfinished">
+                          <div
+                            style="background-image: url(img/sloths/sloth1.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth2.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth3.jpg)"
+                          ></div>
+                          <div
+                            style="background-image: url(img/sloths/sloth4.jpg)"
+                          ></div>
+                        </div>
+                        <div class="slide-buttons-unfinished">
+                          <button class="left-btn-unfinished">
+                            <i class="fa-solid fa-arrow-down"></i>
+                          </button>
+                          <button class="right-btn-unfinished">
+                            <i class="fa-solid fa-arrow-up"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -904,9 +976,6 @@
               </div>
             </div>
           </section>
-          <a name="anchor-contacts" id="anchor-contacts-id">
-            <h1 style="padding-top: 40px; margin-top: -40px"></h1>
-          </a>
           <!-- section contacts -->
           <section class="sec-section" id="section-contacts">
             <div class="section">
@@ -918,7 +987,6 @@
                 </div>
                 <!--contacts form-->
                 <div class="contact-form">
-                  <!-- <link href="contact-form.css" rel="stylesheet" /> -->
                   <div class="fcf-body">
                     <div id="fcf-form">
                       <h3 class="fcf-h3">Contact me</h3>

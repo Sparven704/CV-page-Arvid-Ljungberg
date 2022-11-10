@@ -121,6 +121,159 @@ document.getElementById("cards").onmousemove = (e) => {
 };
 
 //---------------------------------------------------------------------------------------------
+
+//portfolio modal carousel
+
+const leftSlide = document.querySelector(".left-slides");
+const rightSlide = document.querySelector(".right-slides");
+const leftBtn = document.querySelector(".left-btn");
+const rightBtn = document.querySelector(".right-btn");
+const slideLength = leftSlide.querySelectorAll("div").length;
+
+let currentSlide = 0;
+
+rightSlide.style.transform = `translateY(-${(slideLength - 1) * 100}%)`;
+
+leftBtn.addEventListener("click", () => changeSlide("left"));
+rightBtn.addEventListener("click", () => changeSlide("right"));
+
+function changeSlide(btn) {
+  if (btn == "right") {
+    currentSlide++;
+
+    if (currentSlide > slideLength - 1) {
+      currentSlide = 0;
+    }
+  } else if (btn == "left") {
+    currentSlide--;
+
+    if (currentSlide < 0) {
+      currentSlide = slideLength - 1;
+    }
+  }
+
+  rightSlide.style.transform = `translateY(-${
+    (slideLength - 1 - currentSlide) * 100
+  }%)`;
+  leftSlide.style.transform = `translateY(-${currentSlide * 100}%)`;
+}
+
+//---------------------------------------------------------------------------------------------
+
+const leftSlideWork = document.querySelector(".left-slides-work");
+const rightSlideWork = document.querySelector(".right-slides-work");
+const leftBtnWork = document.querySelector(".left-btn-work");
+const rightBtnWork = document.querySelector(".right-btn-work");
+const slideLengthWork = leftSlideWork.querySelectorAll("div").length;
+
+let currentSlideWork = 0;
+
+rightSlideWork.style.transform = `translateY(-${(slideLengthWork - 1) * 100}%)`;
+
+leftBtnWork.addEventListener("click", () => changeSlideWork("left"));
+rightBtnWork.addEventListener("click", () => changeSlideWork("right"));
+
+function changeSlideWork(btn) {
+  if (btn == "right") {
+    currentSlideWork++;
+
+    if (currentSlideWork > slideLengthWork - 1) {
+      currentSlideWork = 0;
+    }
+  } else if (btn == "left") {
+    currentSlideWork--;
+
+    if (currentSlideWork < 0) {
+      currentSlideWork = slideLengthWork - 1;
+    }
+  }
+
+  rightSlideWork.style.transform = `translateY(-${
+    (slideLengthWork - 1 - currentSlideWork) * 100
+  }%)`;
+  leftSlideWork.style.transform = `translateY(-${currentSlideWork * 100}%)`;
+}
+//---------------------------------------------------------------------------------------------
+
+const leftSlideHobby = document.querySelector(".left-slides-hobby");
+const rightSlideHobby = document.querySelector(".right-slides-hobby");
+const leftBtnHobby = document.querySelector(".left-btn-hobby");
+const rightBtnHobby = document.querySelector(".right-btn-hobby");
+const slideLengthHobby = leftSlideHobby.querySelectorAll("div").length;
+
+let currentSlideHobby = 0;
+
+rightSlideHobby.style.transform = `translateY(-${
+  (slideLengthHobby - 1) * 100
+}%)`;
+
+leftBtnHobby.addEventListener("click", () => changeSlideHobby("left"));
+rightBtnHobby.addEventListener("click", () => changeSlideHobby("right"));
+
+function changeSlideHobby(btn) {
+  if (btn == "right") {
+    currentSlideHobby++;
+
+    if (currentSlideHobby > slideLengthHobby - 1) {
+      currentSlideHobby = 0;
+    }
+  } else if (btn == "left") {
+    currentSlideHobby--;
+
+    if (currentSlideHobby < 0) {
+      currentSlideHobby = slideLengthHobby - 1;
+    }
+  }
+
+  rightSlideHobby.style.transform = `translateY(-${
+    (slideLengthHobby - 1 - currentSlideHobby) * 100
+  }%)`;
+  leftSlideHobby.style.transform = `translateY(-${currentSlideHobby * 100}%)`;
+}
+//---------------------------------------------------------------------------------------------
+
+const leftSlideUnfinished = document.querySelector(".left-slides-unfinished");
+const rightSlideUnfinished = document.querySelector(".right-slides-unfinished");
+const leftBtnUnfinished = document.querySelector(".left-btn-unfinished");
+const rightBtnUnfinished = document.querySelector(".right-btn-unfinished");
+const slideLengthUnfinished =
+  leftSlideUnfinished.querySelectorAll("div").length;
+
+let currentSlideUnfinished = 0;
+
+rightSlideUnfinished.style.transform = `translateY(-${
+  (slideLengthWork - 1) * 100
+}%)`;
+
+leftBtnUnfinished.addEventListener("click", () =>
+  changeSlideUnfinished("left")
+);
+rightBtnUnfinished.addEventListener("click", () =>
+  changeSlideUnfinished("right")
+);
+
+function changeSlideUnfinished(btn) {
+  if (btn == "right") {
+    currentSlideUnfinished++;
+
+    if (currentSlideUnfinished > slideLengthUnfinished - 1) {
+      currentSlideUnfinished = 0;
+    }
+  } else if (btn == "left") {
+    currentSlideUnfinished--;
+
+    if (currentSlideUnfinished < 0) {
+      currentSlideUnfinished = slideLengthUnfinished - 1;
+    }
+  }
+
+  rightSlideUnfinished.style.transform = `translateY(-${
+    (slideLengthUnfinished - 1 - currentSlideUnfinished) * 100
+  }%)`;
+  leftSlideUnfinished.style.transform = `translateY(-${
+    currentSlideUnfinished * 100
+  }%)`;
+}
 /* ToDoList:
 
     1. Make portfolio in to different interactive categories, "free time projects" "School projects"
@@ -129,4 +282,5 @@ document.getElementById("cards").onmousemove = (e) => {
     
     3. (optional) Add fun interactive stuff 
 
-*/
+    4. swap mobile nav
+    */
