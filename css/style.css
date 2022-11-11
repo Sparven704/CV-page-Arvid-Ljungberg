@@ -1044,18 +1044,17 @@ input[type="button"].fcf-btn-block {
 
 .close {
   position: absolute;
-  color: black;
+  color: #68e0cf;
   text-decoration: none;
   right: 0;
   padding: 5px 8px;
   margin: 10px;
-  border: 1px solid black;
+  border: 1px solid #68e0cf;
   border-radius: 3px;
   z-index: 999;
 }
 .close:hover {
-  border: 1px solid #68e0cf;
-  color: #68e0cf;
+  transform: scale(1.05);
 }
 /* --------school--------- */
 .slider-container {
@@ -1088,6 +1087,7 @@ input[type="button"].fcf-btn-block {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .left-slides h3 {
   font-size: 3rem;
@@ -1106,7 +1106,7 @@ input[type="button"].fcf-btn-block {
   background-size: cover;
   background-position: center;
 }
-.slider-container button {
+.slider-container .slide-buttons button {
   position: absolute;
   left: 35%;
   top: 50%;
@@ -1126,6 +1126,34 @@ input[type="button"].fcf-btn-block {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.slider-container .left-slides .minesweeper-btn {
+  background: #68e0cf;
+  border: 2px solid #373b40;
+  border-radius: 8px;
+  box-shadow: 5px 10px 18px rgba(33, 33, 33, 0.543);
+  font-size: 1.5rem;
+  padding: 12px;
+  cursor: pointer;
+}
+.slider-container .left-slides .weather-btn {
+  background: #7da9fb;
+  border: 2px solid #373b40;
+  border-radius: 8px;
+  box-shadow: 5px 10px 18px rgba(0, 45, 117, 0.582);
+  font-size: 1.5rem;
+  padding: 12px;
+  cursor: pointer;
+}
+.minesweeper-btn a,
+.weather-btn a {
+  text-decoration: none;
+  color: #373b40;
+  font-weight: 600;
+}
+.slider-container .left-slides .minesweeper-btn:hover,
+.slider-container .left-slides .weather-btn:hover {
+  transform: scale(1.05);
 }
 /* --------------work---------------- */
 .slider-container-work {
@@ -1337,6 +1365,7 @@ input[type="button"].fcf-btn-block {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 @media screen and (max-width: 1287px) {
   .header {
     padding-left: 20px;
