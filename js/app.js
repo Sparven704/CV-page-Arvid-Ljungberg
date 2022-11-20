@@ -274,13 +274,3 @@ function changeSlideUnfinished(btn) {
     currentSlideUnfinished * 100
   }%)`;
 }
-/* ToDoList:
-
-    1. Make portfolio in to different interactive categories, "free time projects" "School projects"
-                                                              "work projects"                                                            
-    2. Make Edjucation and work experiece sections in to slideshows 
-    
-    3. (optional) Add fun interactive stuff 
-
-    4. swap mobile nav
-    */

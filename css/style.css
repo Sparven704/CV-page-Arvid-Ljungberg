@@ -1145,8 +1145,8 @@ input[type="button"].fcf-btn-block {
   padding: 12px;
   cursor: pointer;
 }
-.minesweeper-btn a,
-.weather-btn a {
+.minesweeper-btn,
+.weather-btn {
   text-decoration: none;
   color: #373b40;
   font-weight: 600;
@@ -1554,7 +1554,7 @@ input[type="button"].fcf-btn-block {
   #menu-toggle:checked ~ .menu li {
     border: 1px solid #373b40;
     /* height: 2.5em; */
-    height: 16em;
+    height: 11em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     z-index: 101;
