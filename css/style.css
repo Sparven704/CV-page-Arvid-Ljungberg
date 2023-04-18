@@ -688,7 +688,7 @@ input[type="button"].fcf-btn-block {
   background: #68e0cf;
   border-radius: 14px;
 }
-.skills.dotted .progress .dg .spn1 {
+.skills.dotted .progress .dg .jpn1 {
   display: block;
   width: 14px;
   height: 14px;
@@ -696,7 +696,7 @@ input[type="button"].fcf-btn-block {
   border-radius: 14px;
 }
 
-.skills.dotted .progress .dg .spn2 {
+.skills.dotted .progress .dg .jpn2 {
   display: block;
   width: 14px;
   height: 14px;
@@ -865,6 +865,9 @@ input[type="button"].fcf-btn-block {
   font-size: 24px;
   color: #fff;
   font-weight: 800;
+}
+.contact-info .subname {
+  color:#fff;
 }
 .footer {
   padding: 0;
@@ -1127,6 +1130,24 @@ input[type="button"].fcf-btn-block {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.slider-container .left-slides .bank-btn {
+  background: #68e0cf;
+  border: 2px solid #373b40;
+  border-radius: 8px;
+  box-shadow: 5px 10px 18px rgba(33, 33, 33, 0.543);
+  font-size: 1.5rem;
+  padding: 12px;
+  cursor: pointer;
+}
+.slider-container .left-slides .carrace-btn {
+  background: #68e0cf;
+  border: 2px solid #373b40;
+  border-radius: 8px;
+  box-shadow: 5px 10px 18px rgba(33, 33, 33, 0.543);
+  font-size: 1.5rem;
+  padding: 12px;
+  cursor: pointer;
+}
 .slider-container .left-slides .minesweeper-btn {
   background: #68e0cf;
   border: 2px solid #373b40;
@@ -1145,13 +1166,13 @@ input[type="button"].fcf-btn-block {
   padding: 12px;
   cursor: pointer;
 }
-.minesweeper-btn,
+.carrace-btn, .bank-btn, .minesweeper-btn,
 .weather-btn {
   text-decoration: none;
   color: #373b40;
   font-weight: 600;
 }
-.slider-container .left-slides .minesweeper-btn:hover,
+.slider-container .left-slides .carrace-btn:hover, .slider-container .left-slides .bankrace-btn:hover, .slider-container .left-slides .minesweeper-btn:hover,
 .slider-container .left-slides .weather-btn:hover {
   transform: scale(1.05);
 }
