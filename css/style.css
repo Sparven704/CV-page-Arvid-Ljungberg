@@ -863,7 +863,7 @@ input[type="button"].fcf-btn-block {
 }
 .contact-info {
   padding: 30px;
-  float: right;
+  float: center;
   width: 50%;
   min-height: 482px;
   border: 1px solid #585d65;
